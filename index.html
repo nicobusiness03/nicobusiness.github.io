@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nome Brand</title>
+<meta name="description" content="Streetwear per le serate in centro: pantaloni baggy, felpe boxy e strass.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--ink:#eef0f3;--silver:#b9bdc4;--dim:#80858d;--line:#26282c;--pad:clamp(1.25rem,5vw,4rem)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 1rem/1.6 "Hanken Grotesk",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem var(--pad);border-bottom:1px solid var(--line)}
+.logo{font:700 1rem "Unbounded",sans-serif;text-decoration:none}
+nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--silver);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{position:relative;padding:clamp(4rem,14vw,10rem) var(--pad) clamp(3rem,8vw,6rem);overflow:hidden}
+.wordmark{font:700 clamp(2.4rem,11vw,9rem)/1 "Unbounded",sans-serif;letter-spacing:-.03em;max-width:12ch;background:linear-gradient(105deg,#6f747c 0%,#f7f8fa 22%,#8f959d 40%,#fff 52%,#7a8088 70%,#d5d8dd 100%);background-size:250% 100%;background-position:30% 0;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sweep 2.8s ease-out 1 both}
+@keyframes sweep{from{background-position:100% 0}to{background-position:30% 0}}
+.tag{max-width:34ch;margin-top:2rem;font-size:clamp(1.1rem,2.2vw,1.4rem);color:var(--silver)}
+.cta{display:inline-block;margin-top:2rem;padding:.9rem 1.6rem;border:1px solid var(--ink);text-decoration:none;font-weight:600;transition:background .2s,color .2s}
+.cta:hover{background:var(--ink);color:#000}
+.star{position:absolute;color:#fff;pointer-events:none}
+.star svg{display:block;width:100%;height:100%}
+section{padding:clamp(3rem,8vw,6rem) var(--pad)}
+h2{font:500 clamp(1.4rem,3vw,2rem)/1.2 "Unbounded",sans-serif;margin-bottom:2.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:3.5rem 2.5rem}
+@media(min-width:900px){.grid{grid-template-columns:repeat(3,1fr)}.item:nth-child(3n+2){margin-top:4rem}}
+.ph{position:relative;aspect-ratio:4/5;display:grid;place-items:center;overflow:hidden;border:1px solid var(--line);background:radial-gradient(circle at 30% 20%,#2c2f35,#000 70%);color:var(--dim);font-size:.85rem}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item h3{font:600 1.05rem "Hanken Grotesk",sans-serif;margin-top:1rem}
+.item p{color:var(--dim);font-size:.92rem}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:.75rem}
+.price{font-weight:600}
+.buy{padding:.5rem 1rem;border:1px solid var(--silver);color:var(--ink);background:none;font:inherit;font-size:.9rem;text-decoration:none}
+.buy[aria-disabled=true]{border-color:var(--line);color:var(--dim);pointer-events:none}
+.brand{border-top:1px solid var(--line)}
+.brand p{max-width:60ch;font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.5;color:var(--silver)}
+.info{display:grid;gap:2rem 3rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));border-top:1px solid var(--line)}
+.info h3{font:600 1.05rem "Hanken Grotesk",sans-serif;margin-bottom:.5rem}
+.info p{color:var(--silver);max-width:42ch}
+footer{padding:2rem var(--pad);border-top:1px solid var(--line);color:var(--dim);font-size:.85rem;display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between}
+@media(prefers-reduced-motion:reduce){.wordmark{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#" data-brand>Nome Brand</a>
+  <nav aria-label="Menu principale">
+    <a href="#collezione">Collezione</a>
+    <a href="#brand">Il brand</a>
+    <a href="#info">Spedizioni e resi</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <span class="star" style="width:46px;height:46px;right:14%;top:18%" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.8 6.6 4.9 10.8 12 12-7.1 1.2-11.2 5.4-12 12-.8-6.6-4.9-10.8-12-12C7.1 10.8 11.2 6.6 12 0z"/></svg></span>
+    <span class="star" style="width:24px;height:24px;right:26%;top:42%;opacity:.7" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.8 6.6 4.9 10.8 12 12-7.1 1.2-11.2 5.4-12 12-.8-6.6-4.9-10.8-12-12C7.1 10.8 11.2 6.6 12 0z"/></svg></span>
+    <span class="star" style="width:16px;height:16px;right:9%;top:55%;opacity:.55" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.8 6.6 4.9 10.8 12 12-7.1 1.2-11.2 5.4-12 12-.8-6.6-4.9-10.8-12-12C7.1 10.8 11.2 6.6 12 0z"/></svg></span>
+    <h1 class="wordmark" data-brand>Nome Brand</h1>
+    <p class="tag">Abiti per il sabato sera in centro. Tagli larghi, vita alta, strass che prendono la luce.</p>
+    <a class="cta" href="#collezione">Vedi la collezione</a>
+  </div>
+
+  <section id="collezione">
+    <h2>Collezione</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section class="brand" id="brand">
+    <h2>Il brand</h2>
+    <p>Siamo nati per chi esce e vuole essere notato senza urlare. Vestibilità morbide, capi boxy che restano alla vita e dettagli in strass che brillano sotto le luci del locale. I capi sono personalizzati con il nostro marchio.</p>
+  </section>
+
+  <section class="info" id="info">
+    <div>
+      <h3>Spedizioni</h3>
+      <p>Consegna in 10-20 giorni lavorativi. Ricevi il codice di tracciamento via email appena l’ordine parte.</p>
+    </div>
+    <div>
+      <h3>Resi</h3>
+      <p>Hai 14 giorni dalla consegna per esercitare il diritto di recesso. Scrivici e ti diciamo come procedere.</p>
+    </div>
+    <div>
+      <h3>Contatti</h3>
+      <p>info@iltuodominio.it</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="year"></span> <span data-brand>Nome Brand</span></span>
+  <span>Ragione sociale e partita IVA: da completare</span>
+  <span><a href="#">Privacy</a> · <a href="#">Termini di vendita</a></span>
+</footer>
+
+<script>
+// 1) Cambia qui il nome del brand: si aggiorna in tutto il sito.
+const BRAND = "Nome Brand";
+
+// 2) Modifica i prodotti qui. img: percorso della foto (es. "immagini/baggy-nero.jpg").
+//    link: link di pagamento (es. Stripe). Se è vuoto il pulsante resta "Presto disponibile".
+const PRODUCTS = [
+  {name:"Baggy nero", desc:"Taglio largo, vita alta, caduta pulita sulla scarpa.", price:"49,90", img:"", link:""},
+  {name:"Felpa boxy nera con strass", desc:"Corta in vita, spalle larghe, dettagli che brillano.", price:"44,90", img:"", link:""},
+  {name:"Baggy grigio", desc:"Stessa vestibilità, tessuto grigio fumo.", price:"49,90", img:"", link:""},
+  {name:"Felpa boxy grigia", desc:"Oversize sulle spalle, si ferma alla cintura.", price:"42,90", img:"", link:""},
+  {name:"T-shirt oversize con grafica", desc:"Grafica originale stampata sul petto.", price:"29,90", img:"", link:""},
+  {name:"Cargo nero", desc:"Tasche laterali e gamba ampia.", price:"54,90", img:"", link:""}
+];
+
+document.querySelectorAll("[data-brand]").forEach(el => el.textContent = BRAND);
+document.title = BRAND;
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("grid").innerHTML = PRODUCTS.map(p => `
+  <article class="item">
+    <div class="ph">${p.img ? `<img src="${p.img}" alt="${p.name}" loading="lazy">` : "Foto in arrivo"}</div>
+    <h3>${p.name}</h3>
+    <p>${p.desc}</p>
+    <div class="row">
+      <span class="price">€ ${p.price}</span>
+      ${p.link ? `<a class="buy" href="${p.link}">Acquista</a>` : `<span class="buy" aria-disabled="true">Presto disponibile</span>`}
+    </div>
+  </article>`).join("");
+</script>
+</body>
+</html>
